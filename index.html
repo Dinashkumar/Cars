@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+    
+    <!-- <script src="main.js"></script> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .carousel-item{
+            min-height: 280px;
+        }
+        @import url("https://fonts.googleapis.com/css?family=Roboto");
+        @-webkit-keyframes come-in {
+        0% {
+            -webkit-transform: translatey(100px);
+                    transform: translatey(100px);
+            opacity: 0;
+        }
+        30% {
+            -webkit-transform: translateX(-50px) scale(0.4);
+                    transform: translateX(-50px) scale(0.4);
+        }
+        70% {
+            -webkit-transform: translateX(0px) scale(1.2);
+                    transform: translateX(0px) scale(1.2);
+        }
+        100% {
+            -webkit-transform: translatey(0px) scale(1);
+                    transform: translatey(0px) scale(1);
+            opacity: 1;
+        }
+        }
+        @keyframes come-in {
+        0% {
+            -webkit-transform: translatey(100px);
+                    transform: translatey(100px);
+            opacity: 0;
+        }
+        30% {
+            -webkit-transform: translateX(-50px) scale(0.4);
+                    transform: translateX(-50px) scale(0.4);
+        }
+        70% {
+            -webkit-transform: translateX(0px) scale(1.2);
+                    transform: translateX(0px) scale(1.2);
+        }
+        100% {
+            -webkit-transform: translatey(0px) scale(1);
+                    transform: translatey(0px) scale(1);
+            opacity: 1;
+        }
+        }
+
+        .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+        margin: 35px 25px;
+        }
+        .floating-container:hover {
+        height: 300px;
+        }
+        .floating-container:hover .floating-button {
+        box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+        -webkit-transform: translatey(5px);
+                transform: translatey(5px);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        }
+
+        .floating-container .floating-button {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background: #2cb3f0;
+        bottom: 0;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+        line-height: 65px;
+        text-align: center;
+        font-size: 23px;
+        z-index: 100;
+        box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        vertical-align: middle;
+        }
+    </style>
+    <title>Used Car Sales</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <img src="images/lg.jpg" style="width: 30px;" class="rounded-pill">
+            <a class="navbar-brand ms-2" href="#">TURBO CARS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cars">CARS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Home-->
+    <section id="home" class="bg-cover hero-section" style="background-image: url(images/darkbg.jpg);">
+        <div class="container text-white text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4">USED CARS SALES</h1>
+                    <div class="divider"></div>
+                    <p class="my-4">We sell used cars in good condition at most affordable price.Also we avail
+                        <b>loan</b> for our customer convenience.<b><br>Kindly,visit us for more details and we are always happy to receive you and fulfill your car dream.</b><br>Always refer our website for the updated cars available for sale.To know more kindly call us by clicking the button given below.
+                    </p>
+
+                </div>
+                <div class="container">
+                    <div class="row text-white home.img">
+                        <div class="col-sm ">
+                            <p><b>Buy and Sell</b></p> 
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Exchange</b></p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Finance</b></p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Bank Loan</b></p>
+                        </div>
+                        <div class="col-sm">
+                            <p><b>Brokerage</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- call now -->
+
+            <a  class="btn btn-primary rounded-pill mt-5" href="#">CALL NOW</a>
+            
+        <!-- Float button -->
+            <div class="floating-container">
+                <a href="#"><div class="floating-button">
+                    <img src="images/call.png" style="width: 25px;"></div> </a>  
+            </div>
+          
+        </div>
+        </div>
+    </section>
+
+
+<!--cars-->
+    <section id="cars" class="bg-cover bg-white">
+        <div class="container text-dark">
+            <div class="row cars-intro">
+                <div class="col-sm text-center">
+                    <h1 class="display-4">AVAILABLE CARS</h1>
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+    <!--models-->
+<!-- first row -->
+
+        <div class="row mt-5">
+            
+    <!-- model-1 -->
+
+            <div class="col-sm">
+                <div class="cars">
+                        <div id="myCarousel1" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/poloa.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/polof.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/polos1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/polos2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/polob.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/polod.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <h5 class="mt-5 pt-4 text-center">VolksWagen Polo</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>1.2 TDI comfortline<br>2011 Registered<br>79000kms<br>TN
+                            registered<br>Diesel<br>ABS Brakes<br><br>₹3,29,000/-</p>      
+                </div>
+            </div>
+
+    <!-- model-2 -->
+
+            <div class="col-sm">
+                <div class="cars">
+                        <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/kwida.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/kwidf.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/kwids1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/kwids2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/kwidb.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/kwidd.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <h5 class="mt-5 pt-4 text-center">Renault Kwid</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>RXT optional 0.8<br>2016 Registered<br>64000kms<br>TN
+                            registered<br>Petrol<br>Second owner<br><br>₹2,89,000/-</p>             
+                </div>
+            </div>
+
+    <!-- model-3 -->
+
+            <div class="col-sm">
+                <div class="cars">
+                        <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/goa.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gof.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gos1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gos2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/gob.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/god.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <h5 class="mt-5 pt-4 text-center">Datsun Go</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>T 1.2<br>2014 Registered<br>58000kms<br>TN
+                            registered<br>Petrol<br>Second owner<br><br>₹2,65,000/-</p>  
+                </div>
+            </div>
+        </div>
+
+<!-- second row -->
+
+        <div class="row mt-5">
+
+    <!-- model-4 -->
+
+                <div class="col-sm">
+                    <div class="cars">
+                        <div id="myCarousel4" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/altoa.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/altof.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/altos1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/altos2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/altob.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/altod.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <h5 class="mt-5 pt-4 text-center">Maruti Suzuki Alto</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>800 Lxi<br>2013 Registered<br>83000kms<br>TN
+                            registered<br>Petrol<br>Single owner<br><br>₹2,55,000/-</p>
+                    </div>
+                </div>
+
+    <!-- model-5 -->
+
+            <div class="col-sm">
+                <div class="cars">
+                    <div id="myCarousel5" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/puntoa.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/puntof.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/puntos1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/puntos2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/puntob.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/puntod.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>
+                        <h5 class="mt-5 pt-4 text-center">Fiat Punto</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>Emotion Petrol Engine<br>2010 Registered<br>89000kms<br>TN
+                            registered<br>Petrol<br>Second owner<br>ABS Brakes<br>Alloy Wheels<br><br>₹1,95,000/-</p>   
+                </div>
+            </div>
+
+    <!-- model-6 -->
+
+            <div class="col-sm">
+                <div class="cars">
+                    <div id="myCarousel6" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/citya.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cityf.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/citys1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/citys2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cityb.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cityd.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>
+                        <h5 class="mt-5 pt-4 text-center">Honda City</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>IVtech V MT Petrol<br>2011 Registered<br>99500kms<br>TN
+                            registered<br>Second owner<br>Company alloy wheels<br>ABS brakes<br><br>₹3,85,000/-</p>
+                </div>
+            </div>
+        </div>
+
+<!-- third row-->
+            
+        <div class="row mt-5">
+
+    <!-- model-7 -->
+            <div class="col-sm">
+                <div class="cars">
+                    <div id="myCarousel7" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/scalaa.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/scalaf.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/scalas1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/scalas2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/scalab.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/scalad.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>
+                        <h5 class="mt-5 pt-4 text-center">Renault Scala</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>RXZ top variant<br>2012 Registered<br>127000kms<br>TN
+                            registered<br>Diesel<br>Single owner<br><br>₹3,65,000/-</p>
+                </div>
+            </div>
+
+    <!-- model-8 -->
+            <div class="col-sm">
+                <div class="cars">
+                    <div id="myCarousel8" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/sunnya.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sunnyf.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sunnys1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sunnys2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sunnyb.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sunnyd.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel8" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel8" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>
+                        <h5 class="mt-5 pt-4 text-center">Nissan Sunny</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>XL Diesel<br>2012 Registered<br>121000kms<br>TN
+                            registered<br>Single owner<br>ABS Brakes<br><br>₹3,49,000/-</p>
+                </div>
+            </div>
+
+    <!-- model-9 -->
+            <div class="col-sm">
+                <div class="cars">
+                    <div id="myCarousel8" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/swifta.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/swiftf.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/swifts1.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/swifts2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/swiftb.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/swiftd.jpg" class="d-block w-100" alt="Slide 6">
+                                </div>
+                            </div>
+
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel8" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel8" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>
+                        <h5 class="mt-5 pt-4 text-center">Maruti Suzuki Swift</h5>
+                        <div class="divider"></div>
+                        <p><b>Description :</b><br>VDI Diesel<br>2009 Registered<br>88000kms<br>TN
+                            registered<br>Second owner<br>Power Steering<br>Reverse Parking Sensor<br><br>₹2,85,000/-</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!--about us-->
+    <section id="about" class="bg-cover" style="background-image: url(images/darkbg.jpg);">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-sm about-intro  text-center">
+                        <h1 class="display-4">ABOUT US</h1>
+                        <div class="divider"></div>
+                        <p class="my-4">
+                        <h2><b>Making your Ride easier.</b></h2>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md mt-5 pt-4">
+                        <div class="about about-intro text-center">
+                            <div>
+                                <img src="images/abt.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm mt-5">
+                        <div class="about about-intro text-center">
+                            <h4 class="mt-5">TURBO CARS</h4>
+                            <div class="hdivider"></div>
+                            <p>At TURBO CARS, we always look out for new ways to make your life easier.
+                                We <b>Buy,Sell and Exchange the cars.</b> That’s why whenever you need a car, we help you to
+                                choose the best ride you need for your family according to your needs and we always try our
+                                very best to provide quality cars at affordable cost in the City.We also avail loan at
+                                low interest for the car to make your dream come true with the best quality cars at ease.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!--contact-->
+    <section id="contact" class="bg-cover bg-white">
+            <div class="container text-dark">
+                <div class="row">
+                    <div class="col-12 section-intro text-center mb-5">
+                        <h1>CONTACT US</h1>
+                        <div class="divider"></div>
+                        <p> Visit our site<b> Turbo cars</b> and we would commit to give you the best in class
+                            assistance <br>to your requirements or contact us and we will support you to select your perfect
+                            car.<br>
+                            <h3>Address:</h3>
+                            <div class="divider"></div>
+                            TURBO CARS<br>Address Line1,<br>Address Line2,<br>Landmark,<br>City.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+<!--footer-->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-dark">2023 © All Rights Reserved. Designed by DK</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

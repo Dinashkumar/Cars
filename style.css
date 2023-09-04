@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800 important;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    color:#000;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative6;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .img {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    flex: 0 0 32px;
+}
+
+.b1{
+    display: inline-block;
+    list-style: none;    
+}
+
+.btn {
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn_color {
+    background: linear-gradient(to right, #04aecc, #4e03a3fa);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #000;
+    transform: translateY(-5px);
+}
+
+
+.navbar {
+    background-color: #646363;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    background: -webkit-linear-gradient(#04aecc, #4e03a3fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.section-intro .divider {
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+}
+
+.cars {
+    margin-bottom: 10px;
+}
+
+.cars-intro .divider {
+    height: 2px;
+    width: 150px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+}
+
+
+.divider {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.about-intro .divider {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+}
+
+.about-intro .hdivider {
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact .section-intro .divider {
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    margin: 16px auto;
+}
+
+footer {
+    background: linear-gradient(to right,  #04aecc, #4e03a3fa);
+    color: #fff;
+}
